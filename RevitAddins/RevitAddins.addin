@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Saludo</Text>
+    <Description>Sirve para Saludar</Description>
+    <Assembly>RevitAddins.dll</Assembly>
+    <FullClassName>RevitAddins.Saludo</FullClassName>
+    <ClientId>7a13a592-b3d5-4909-b24c-e1f748a6d54a</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application  Saludo</Name>
+    <Assembly>RevitAddins.dll</Assembly>
+    <FullClassName>RevitAddins.Application</FullClassName>
+    <ClientId>a7b1c86a-2cc8-42b5-9587-1eb4f5e926fa</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
