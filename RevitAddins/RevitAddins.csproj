@@ -54,6 +54,10 @@
   <ItemGroup>
     <Compile Include="Application.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="SharedParametersFile\Group.cs" />
+    <Compile Include="SharedParametersFile\Meta.cs" />
+    <Compile Include="SharedParametersFile\Parameter.cs" />
+    <Compile Include="SharedParametersFile\SharedParameterFile.cs" />
     <Compile Include="WriteTxt.cs" />
     <Compile Include="ReadTxt.cs" />
     <Compile Include="Saludo.cs" />

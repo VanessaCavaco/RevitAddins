@@ -27,7 +27,20 @@ namespace RevitAddins
                 string txtPath = @"D:\GitHubRepos\RevitAddins\RevitAddins\Assets\mvp-fullstack-sample.txt";
                 using (StreamReader reader = new StreamReader(txtPath))
                 {
+                    
+                    //txt to string
                     string txtFileText = reader.ReadToEnd();
+
+                    var sharedParameters = new SharedParametersFile.SharedParameterFile(txtFileText);
+                    //string parameters = "";
+                    //for (int i = 0; i> sharedParameters.Parameters.Count; i++) { 
+                    //    parameters += sharedParameters.Parameters[i].Name;
+                    //    parameters += "\n";
+                    //}
+                    //TaskDialog.Show("Only Parameters Parameters", parameters);
+
+                    TaskDialog.Show("Shared Parameters",sharedParameters.ToString());
+
                     TaskDialog.Show("Txt file", txtFileText);
                 }
                 return Result.Succeeded;
@@ -38,5 +51,6 @@ namespace RevitAddins
                 return Result.Failed;
             }
         }
+        
     }
 }
