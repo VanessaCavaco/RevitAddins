@@ -8,7 +8,6 @@ namespace RevitAddins.SharedParametersFile
 {
     internal class Group
     {
-        public string Id { get; set; }
         public string Name { get; set; }
 
         public Group()
